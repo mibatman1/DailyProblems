@@ -1,0 +1,17 @@
+Tree Types:
+    Full Binary Tree->
+        1. Either has 0 or 2 children.
+
+    Complete Binary Trees->
+        1. All levels are completely filled except the last level.
+        2. The last level has all nodes in left as possible.
+
+    Perfect Binary Trees->
+        1. All the leaf nodes are at same level.
+
+    Balanced Binary Tree->
+        1. Height of the tree at max log n nodes.
+
+Inorder Traversal(Left, Root, Right)
+Preorder Traversal(Root, Left, Right)
+Postorder Traversal(Left, Right, Root)
