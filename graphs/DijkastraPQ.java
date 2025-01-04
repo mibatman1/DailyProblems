@@ -53,7 +53,7 @@ public class DijkastraPQ
             }
             nestedList.add(list2D);
         }
-        dijkastraPQ.dijkstra(null, 0)
+        dijkastraPQ.dijkstra(null, 0);
     }
 }
 
