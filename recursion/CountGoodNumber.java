@@ -5,12 +5,13 @@ public class CountGoodNumber
 {
     public int countGoodNumbers(long n) 
     {
-        return solve(n);     
+        int cnt=0;
+        return solve(cnt, new StringBuilder(),n);     
     }
 
-    int solve(long n)
+    int solve(int cnt, StringBuilder str, long n)
     {
-        if(n==0)
+        if(n==str.length())
             return 1;
     }
 }

@@ -41,7 +41,7 @@ public class PermutationII
     }
 
     public static void main(String[] args) {
-        int arr[]={1,1,2};
+        int arr[]={1,2,3};
         PermutationII permutationII=new PermutationII();
         System.out.println(permutationII.permuteUnique(arr));
     }
