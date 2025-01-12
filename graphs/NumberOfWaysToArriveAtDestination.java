@@ -29,7 +29,7 @@ public class NumberOfWaysToArriveAtDestination
         Arrays.fill(dist,(int)1e9);
         Arrays.fill(ways,(int)1e9);
         dist[0]=0;
-        ways[0]=0;
+        ways[0]=1;
         int mod=(int)1e9+7;
         while(!q.isEmpty())
         {
