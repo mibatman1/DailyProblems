@@ -3,23 +3,16 @@ package trees;
 public class RecoverBST 
 {
     TreeNode first=null;
-    TreeNode middle=null;
-    TreeNode last=null;
+    TreeNode second=null;
     TreeNode prev=null;
     public void recoverTree(TreeNode root) {
         prev=new TreeNode(Integer.MIN_VALUE);
         dfs(root);
-        if(first!=null && middle!=null)
+        if(first!=null && second!=null)
         {
             var temp=first.val;
-            first.val=middle.val;
-            middle.val=temp;
-        }
-        if(first!=null && last!=null)
-        {
-            var temp=first.val;
-            first.val=last.val;
-            last.val=temp;
+            first.val=second.val;
+            second.val=temp;
         }
     }
     
@@ -33,12 +26,8 @@ public class RecoverBST
             if(first==null)
             {
                 first=prev;
-                middle=node;
             }
-            else
-            {
-                last=node;
-            }
+            second=node;
         }
         prev=node;
         dfs(node.right);
