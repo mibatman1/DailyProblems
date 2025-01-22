@@ -15,6 +15,11 @@ public class LRUCache
         arr=new int[capacity];
         Arrays.fill(arr, -1);
     }
+
+    [1,2,3,4]
+    [4,3]
+    [1,2,3,5]
+    [1,2,5,6]
     
     public int get(int key) {
         
