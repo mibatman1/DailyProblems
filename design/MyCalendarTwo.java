@@ -19,14 +19,14 @@ class MyCalendarTwo {
         bookingCount.put(end, bookingCount.getOrDefault(end, 0) - 1);
 
         int overlappedBooking = 0;
-        [10-20, 10-40, 50-60, 5-15]
-        [5-1, 10- 1, 15 -1, 20- -1, 40 -1, 50 1, 60 -1]
+        // [10-20, 10-40, 50-60, 5-15]
+        // [5-1, 10- 1, 15 -1, 20- -1, 40 -1, 50 1, 60 -1]
         // Calculate the prefix sum of bookings.
-        for (Map.Entry<Integer, Integer> entry : bookingCount.entrySet()) {
-            System.out.println(overlappedBooking+"start");
-            System.out.println(entry.toString());
-            overlappedBooking += entry.getValue();
-            System.out.println(overlappedBooking+"after");
+        for (var entry : bookingCount.values()) {
+            //System.out.println(overlappedBooking+"start");
+            System.out.println(entry);
+            //overlappedBooking += entry.getValue();
+            //System.out.println(overlappedBooking+"after");
 
             // If the number of overlaps exceeds the allowed limit, rollback and
             // return false.

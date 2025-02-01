@@ -1,44 +1,42 @@
 package design;
 
-import java.util.Arrays;
+import java.util.Deque;
+import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.Map;
 
 // https://leetcode.com/problems/lru-cache/?envType=problem-list-v2&envId=mbnk3qwv
 public class LRUCache 
 {
-    private Queue<Pair>q;
-    int arr[];
+    private Deque<Integer>lru;
+    private Map<Integer, Integer>mp;
+    int capacity;
     public LRUCache(int capacity) {
-        q=new LinkedList<>();
-        arr=new int[capacity];
-        Arrays.fill(arr, -1);
+        lru=new LinkedList<>();
+        mp=new HashMap<>();
+        this.capacity=capacity;
     }
-
-    [1,2,3,4]
-    [4,3]
-    [1,2,3,5]
-    [1,2,5,6]
     
     public int get(int key) {
-        
+        if(!mp.containsKey(key))
+            return -1;
+        lru.remove(key);
+        lru.addLast(key);
+        return mp.get(key);
     }
     
     public void put(int key, int value) {
-        if(arr[key-1]!=-1)
+        if(mp.containsKey(key))
         {
-            
+            mp.remove(key);
+            lru.remove(key);
         }
-    }
-}
-
-class Pair
-{
-    int key, pair;
-    public Pair(int key, int pair)
-    {
-        this.key=key;
-        this.pair=pair;
+        mp.put(key, value);
+        lru.addLast(key);
+        if(lru.size()>this.capacity)
+        {
+            var node=lru.pollFirst();
+            mp.remove(node);
+        }
     }
 }
