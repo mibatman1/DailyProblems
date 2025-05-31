@@ -1,4 +1,4 @@
-package trees;
+package dailyproblems.trees;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

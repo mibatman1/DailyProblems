@@ -1,4 +1,4 @@
-package classicaldp;
+package dailyproblems.classicaldp;
 
 // https://leetcode.com/problems/maximum-subarray/description/?envType=problem-list-v2&envId=m22s5qzg
 // Important

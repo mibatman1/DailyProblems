@@ -1,4 +1,4 @@
-package dp;
+package dailyproblems.dp;
 
 import java.util.Arrays;
 import java.util.List;

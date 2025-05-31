@@ -1,4 +1,4 @@
-package trees;
+package dailyproblems.trees;
 
 // https://leetcode.com/problems/validate-binary-search-tree/?envType=problem-list-v2&envId=m22zk1nr
 public class ValidateBST 

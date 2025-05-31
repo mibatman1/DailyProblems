@@ -1,4 +1,4 @@
-package design;
+package dailyproblems.design;
 
 import java.util.Collections;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package stacksqueue;
+package dailyproblems.stacksqueue;
 
 public class NextGreaterElement3 
 {

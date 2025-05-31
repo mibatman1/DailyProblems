@@ -1,4 +1,4 @@
-package potd;
+package dailyproblems.potd;
 
 // https://leetcode.com/problems/grid-game/?envType=daily-question&envId=2025-01-21
 public class GridGame 

@@ -1,4 +1,4 @@
-package stacksqueue;
+package dailyproblems.stacksqueue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

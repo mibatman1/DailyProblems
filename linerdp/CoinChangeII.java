@@ -1,4 +1,4 @@
-package linerdp;
+package dailyproblems.linerdp;
 
 public class CoinChangeII 
 {

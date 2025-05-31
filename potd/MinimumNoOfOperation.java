@@ -1,4 +1,4 @@
-package potd;
+package dailyproblems.potd;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

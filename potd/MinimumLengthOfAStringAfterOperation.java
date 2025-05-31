@@ -1,4 +1,4 @@
-package potd;
+package dailyproblems.potd;
 
 import java.util.HashMap;
 import java.util.Map;

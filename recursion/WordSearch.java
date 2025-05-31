@@ -1,4 +1,4 @@
-package recursion;
+package dailyproblems.recursion;
 
 // https://leetcode.com/problems/word-search/description/?envType=problem-list-v2&envId=mk7dslmg
 public class WordSearch 

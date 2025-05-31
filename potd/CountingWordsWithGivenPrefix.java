@@ -1,4 +1,4 @@
-package potd;
+package dailyproblems.potd;
 
 // https://leetcode.com/problems/counting-words-with-a-given-prefix/?envType=daily-question&envId=2025-01-09
 public class CountingWordsWithGivenPrefix 

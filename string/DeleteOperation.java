@@ -1,4 +1,4 @@
-package string;
+package dailyproblems.string;
 
 public class DeleteOperation 
 {

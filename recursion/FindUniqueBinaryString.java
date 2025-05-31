@@ -1,4 +1,4 @@
-package recursion;
+package dailyproblems.recursion;
 
 import java.util.HashSet;
 import java.util.Set;

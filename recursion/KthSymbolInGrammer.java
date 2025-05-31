@@ -1,4 +1,4 @@
-package recursion;
+package dailyproblems.recursion;
 
 // https://leetcode.com/problems/k-th-symbol-in-grammar/description/
 public class KthSymbolInGrammer 

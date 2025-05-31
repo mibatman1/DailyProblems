@@ -1,4 +1,4 @@
-package classicaldp;
+package dailyproblems.classicaldp;
 
 public class NoOfLongestIncreasingSubsequence 
 {

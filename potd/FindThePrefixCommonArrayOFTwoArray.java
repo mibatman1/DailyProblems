@@ -1,4 +1,4 @@
-package potd;
+package dailyproblems.potd;
 
 public class FindThePrefixCommonArrayOFTwoArray {
     public int[] findThePrefixCommonArray(int[] A, int[] B) {

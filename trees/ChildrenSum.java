@@ -1,4 +1,4 @@
-package trees;
+package dailyproblems.trees;
 
 
 // https://www.geeksforgeeks.org/problems/children-sum-parent/1

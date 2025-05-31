@@ -1,4 +1,4 @@
-package slidingwindow;
+package dailyproblems.slidingwindow;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

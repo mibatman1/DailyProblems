@@ -1,4 +1,4 @@
-package recursion;
+package dailyproblems.recursion;
 
 // https://leetcode.com/problems/path-with-maximum-gold/description/?envType=problem-list-v2&envId=mk7dslmg
 public class PathWithMaximumGold 

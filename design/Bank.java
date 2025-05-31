@@ -1,4 +1,4 @@
-package design;
+package dailyproblems.design;
 
 // https://leetcode.com/problems/simple-bank-system/description/?envType=problem-list-v2&envId=mbnk3qwv
 public class Bank {

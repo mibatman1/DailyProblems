@@ -1,4 +1,4 @@
-package design;
+package dailyproblems.design;
 
 class ParkingSystem {
     private int big, medium, small;

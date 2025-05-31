@@ -1,4 +1,4 @@
-package string;
+package dailyproblems.string;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

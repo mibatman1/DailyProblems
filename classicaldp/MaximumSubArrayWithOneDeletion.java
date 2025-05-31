@@ -1,4 +1,4 @@
-package classicaldp;
+package dailyproblems.classicaldp;
 
 // Important- Kadane Algo
 public class MaximumSubArrayWithOneDeletion 

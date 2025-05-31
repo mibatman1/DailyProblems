@@ -1,4 +1,4 @@
-package graphs;
+package dailyproblems.graphs;
 
 public class Pair 
 {

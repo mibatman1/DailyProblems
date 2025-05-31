@@ -1,4 +1,4 @@
-package design;
+package dailyproblems.design;
 
 // https://leetcode.com/problems/design-a-stack-with-increment-operation/?envType=problem-list-v2&envId=mbnk3qwv
 public class CustomStack 

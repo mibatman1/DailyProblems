@@ -1,4 +1,4 @@
-package graphs;
+package dailyproblems.graphs;
 
 import java.util.Arrays;
 import java.util.HashMap;

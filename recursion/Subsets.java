@@ -1,4 +1,4 @@
-package recursion;
+package dailyproblems.recursion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class Subsets
     }
 
     public static void main(String[] args) {
-        int arr[]={1,2,3};
+        int arr[]={1,2,2};
         Subsets subsets=new Subsets();
         System.out.println(subsets.subsets(arr));
     }

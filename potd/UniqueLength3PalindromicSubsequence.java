@@ -1,4 +1,4 @@
-package potd;
+package dailyproblems.potd;
 
 import java.util.ArrayList;
 import java.util.HashSet;

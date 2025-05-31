@@ -1,4 +1,4 @@
-package graphs;
+package dailyproblems.graphs;
 
 import java.util.ArrayList;
 import java.util.List;

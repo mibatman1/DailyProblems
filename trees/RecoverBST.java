@@ -1,4 +1,4 @@
-package trees;
+package dailyproblems.trees;
 
 public class RecoverBST 
 {

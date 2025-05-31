@@ -1,4 +1,4 @@
-package graphs;
+package dailyproblems.graphs;
 
 // https://www.geeksforgeeks.org/problems/flood-fill-algorithm1856/1
 public class FloodFill 

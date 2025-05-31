@@ -1,4 +1,4 @@
-package linerdp;
+package dailyproblems.linerdp;
 
 import java.util.Arrays;
 

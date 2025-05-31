@@ -1,4 +1,4 @@
-package linerdp;
+package dailyproblems.linerdp;
 
 // https://leetcode.com/problems/divisor-game/submissions/1517020493/?envType=problem-list-v2&envId=m221lq9s
 public class DivisorGame 

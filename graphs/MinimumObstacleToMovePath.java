@@ -1,4 +1,4 @@
-package graphs;
+package dailyproblems.graphs;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;

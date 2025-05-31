@@ -1,4 +1,4 @@
-package recursion;
+package dailyproblems.recursion;
 
 public class FindKthStringGame1 
 {

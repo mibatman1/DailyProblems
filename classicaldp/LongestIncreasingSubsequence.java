@@ -1,4 +1,4 @@
-package classicaldp;
+package dailyproblems.classicaldp;
 
 import java.util.Arrays;
 

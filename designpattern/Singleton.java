@@ -1,4 +1,4 @@
-package designpattern;
+package dailyproblems.designpattern;
 
 public class Singleton 
 {
