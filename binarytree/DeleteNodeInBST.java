@@ -2,23 +2,41 @@ package dailyproblems.binarytree;
 
 public class DeleteNodeInBST 
 {
-    public TreeNode deleteNode(TreeNode root, int key) {
-        
-    }
-    
-    private void solve(TreeNode node, int key)
+    public TreeNode deleteNode(TreeNode root, int key) 
     {
-        if(node==null)
-            return;
-        if(node.val==key)
+        if(root==null)
+            return null;
+        if(root.val<key)
         {
-            var temp=node;
-            if(node.right!=null)
+            root.right=deleteNode(root.right, key);
+        }
+        else if(root.val>key)
+        {
+            root.left=deleteNode(root.left, key);
+        }
+        else
+        {
+            if(root.left==null)
+                return root.right;
+            else if(root.right==null)
+                return root.left;
+            else
             {
-                node=node.right;
+                root.val=minValue(root.right);
+                root.right=deleteNode(root.right, root.val);
             }
         }
-        solve(node.left, key);
-        solve(node.right, key);
+        return root;
+    }
+    
+    private int minValue(TreeNode node)
+    {
+        var minValue=node.val;
+        while(node.left!=null)
+        {
+            minValue=node.left.val;
+            node=node.left;
+        }
+        return minValue;
     }
 }
