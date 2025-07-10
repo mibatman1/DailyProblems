@@ -1,23 +1,43 @@
 package dailyproblems.slidingwindow;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class ShortestSubArrayWithSumAtLeastK {
-    public int shortestSubarray(int[] nums, int k) {
-        int r=0, l=0, len=Integer.MAX_VALUE, sum=0;
+
+    public int shortestSubarray(int nums[], int targetSum)
+    {
+        long prefixSums[]=new long[nums.length+1];
+
+        Deque<Integer>dq=new LinkedList<>();
+        int r=0, len=Integer.MAX_VALUE;
+
         while(r<nums.length)
         {
-            if(sum>k)
+            if(r==0)
             {
-                sum-=nums[l];
-                l++;
+                prefixSums[r]=nums[r];
             }
-            if(sum<k)
+            else
             {
-                sum+=nums[r];
+                prefixSums[r]=prefixSums[r-1]+nums[r];
             }
-            if(sum>=k)
+
+            if(prefixSums[r]>=targetSum)
+                len=Math.min(len, r+1);
+
+            while(!dq.isEmpty() && prefixSums[r]-prefixSums[dq.peekFirst()]>=targetSum)
             {
-                len=Math.min(len, r-l+1);
+                len=Math.min(len, r-dq.pollFirst());
             }
+
+            while(prefixSums[r]<=prefixSums[dq.peekLast()])
+            {
+                dq.pollLast();
+            }
+
+            dq.addLast(r);
+
             r++;
         }
         return len==Integer.MAX_VALUE?-1:len;
