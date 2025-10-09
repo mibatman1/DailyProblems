@@ -63,7 +63,7 @@ public class FindMaximalSquare
 
     public static void main(String[] args) {
         FindMaximalSquare findMaximalSquare=new FindMaximalSquare();
-        char mat[][]={{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}};
+        char mat[][]={{'1','1','1'},{'1','1','1'},{'1','1','1'}};
         System.out.println(findMaximalSquare.maximalSquare(mat));
     }
 }

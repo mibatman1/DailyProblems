@@ -29,7 +29,8 @@ public class FruitsIntoBasket {
 
 
     public static void main(String[] args) {
-        
+        String s=new String();
+        s.contains('a');
     }
     
 }

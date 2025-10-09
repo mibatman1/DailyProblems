@@ -1,5 +1,6 @@
 package dailyproblems.graphs;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class PathWithMinimumEffort 
@@ -10,12 +11,9 @@ public class PathWithMinimumEffort
         int m=heights[0].length;
         PriorityQueue<Tuple>q=new PriorityQueue<>((x,y)->x.d-y.d);
         int dist[][]=new int[n][m];
-        for(int i=0;i<n;i++)
+        for(var it:dist)
         {
-            for(int j=0;j<m;j++)
-            {
-                dist[i][j]=(int)1e9;
-            }
+            Arrays.fill(it, (int)1e9);
         }
         dist[0][0]=0;
         q.add(new Tuple(0, 0, 0));
@@ -27,6 +25,7 @@ public class PathWithMinimumEffort
             var diff=node.d;
             var r=node.r;
             var c=node.c;
+            
             if(r==n-1 && c==m-1)
                 return diff;
             

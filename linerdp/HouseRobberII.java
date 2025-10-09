@@ -1,6 +1,7 @@
 package dailyproblems.linerdp;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class HouseRobberII 
 {
@@ -8,6 +9,8 @@ public class HouseRobberII
     {
         int dp[]=new int[nums.length];
         Arrays.fill(dp, -1);
+        Stack<Integer>st=new Stack<>();
+        st.pop();
         return solve(nums, nums.length-1, dp);   
     }
     int solve(int nums[], int idx, int dp[])
